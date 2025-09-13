@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --branco: #FFF;
+    --azul-escuro: #010A26;
+    --azul-medio: #041A59;
+    --azul-claro: #072273;
+    --verde-escuro: #1E2601;
+    --verde-claro: #56593F;
+    --fonte-secundaria: "Josefin Sans", sans-serif;
+    --fonte-principal: "Inspiration", cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 480px) {
+    #header {
+        background-color: var(--azul-claro);
+        color: var(--branco);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+
+    }
+
+    #titulo-header {
+        font-family: var(--fonte-principal);
+        text-align: center;
+        flex: 1;
+        font-size: 28px;
+        margin-left: 94px;
+    }
+
+    .menu {
+        display: flex;
+        list-style: none;
+
+    }
+
+    .icone-menu {
+        width: 30px;
+        height: 34px;
+    }
+
+    .menu li {
+        margin-right: 10px;
+    }
+
+    #imagem-banner {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    #banner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    #banner::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, #fff 2%, #ffffff00 30%);
+    }
+
+    #titulo-meus-trabalhos {
+        color: var(--azul-claro);
+        font-family: var(--fonte-principal);
+        font-size: 40px;
+        font-weight: 100;
+        text-align: center;
+        padding: 30px 0 30px 0;
+    }
+
+    .titulo-especialidade {
+        font-family: var(--fonte-secundaria);
+        color: var(--branco);
+        font-size: 22px;
+        font-weight: 100;
+    }
+
+    #especialidade-musicalizacao {
+        background-color: var(--verde-claro);
+        padding: 40px 35px;
+        text-align: center;
+    }
+
+    #especialidade-entrevista {
+        background-color: var(--verde-escuro);
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    #especialidade-casamento {
+        background-color: var(--verde-claro);
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    #imagem-musicalizacao,
+    #imagem-entrevista,
+    #imagem-casamento {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 30px;
+        border-radius: 20px;
+    }
+
+    #sobre-mim {
+        display: flex;
+        flex-direction: column;
+        padding: 32px 0;
+    }
+
+    #titulo-sobre-mim {
+        text-align: center;
+        font-family: var(--fonte-principal);
+        color: var(--verde-claro);
+        font-weight: 200;
+        font-size: 50px;
+
+    }
+
+    #imagem-coracao {
+        margin-left: 8px;
+    }
+
+    #texto-sobre-mim {
+        font-family: var(--fonte-secundaria);
+        color: #5E5E5E;
+        font-size: 16px;
+    }
+
+    #barra-lateral-texto {
+        display: flex;
+        flex-direction: row;
+        padding: 60px;
+        justify-content: center;
+        margin-left: -30px;
+
+    }
+
+    .paragrafo-sobre-mim {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    #imagem-barra {
+        margin-right: 20px;
+    }
+
+    #redes {
+        background-color: var(--azul-escuro);
+        padding: 20px;
+    }
+
+    .rede-social {
+        background-color: var(--verde-claro);
+        display: flex;
+        width: 160px;
+        /* justify-content: center;
+        align-items: center; */
+        padding: 6px;
+        margin-bottom: 16px;
+        border-radius: 25px;
+        font-family: var(--fonte-secundaria);
+        color: var(--branco);
+        font-weight: 100;
+    }
+
+    #rede-titulo {
+        font-family: var(--fonte-principal);
+        color: var(--branco);
+        font-weight: 100;
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .rede-social a {
+        margin-left: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: var(--branco);
+    }
+
+    .rede-social a:visited {
+        color: var(--branco);
+    }
+
+    .rede-social a:active {
+        color: var(--branco);
+    }
+
+
+
+    #imagem-contato-ana {
+        width: 80%;
+        height: 80%;
+        border-radius: 30px;
+
+    }
+
+    #redes-imagem {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #redes-coluna {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    #footer-texto {
+        font-family: var(--fonte-secundaria);
+        color: var(--azul-medio);
+        font-weight: 300;
+        text-align: center;
+    }
+
+    footer {
+        padding: 15px;
+    }
+
+    .reveal {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
